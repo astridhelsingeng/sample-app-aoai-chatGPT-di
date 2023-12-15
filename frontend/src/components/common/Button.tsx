@@ -50,12 +50,15 @@ export const HistoryButton: React.FC<HistoryButtonProps> = ({onClick, text}) => 
         root: {
             width: '180px',
             border: `1px solid #D1D1D1`,
+            background: 'transparent',
           },
           rootHovered: {
             border: `1px solid #D1D1D1`,
+            background: '#7d55c7',
           },
           rootPressed: {
             border: `1px solid #D1D1D1`,
+            background: 'transparent',
           },
       };
 
