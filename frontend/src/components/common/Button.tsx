@@ -49,16 +49,22 @@ export const HistoryButton: React.FC<HistoryButtonProps> = ({onClick, text}) => 
     const historyButtonStyles: ICommandBarStyles & IButtonStyles = {
         root: {
             width: '180px',
-            border: `1px solid #D1D1D1`,
+            border: `1px solid #7d55c7`,
             background: 'transparent',
+            color: '#FFFFFF',
           },
           rootHovered: {
             border: `1px solid #D1D1D1`,
             background: '#7d55c7',
+            color: '#FFFFFF',
           },
           rootPressed: {
             border: `1px solid #D1D1D1`,
             background: 'transparent',
+            color: '#FFFFFF',
+          },
+          label: { // Text color
+            color: '#FFFFFF', // White color
           },
       };
 
