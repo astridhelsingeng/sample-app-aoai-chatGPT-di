@@ -5,7 +5,7 @@
 }
 
 .header {
-    background-color: #f2f2f2;
+    background-color: transparent;
 }
 
 .headerContainer {
@@ -28,7 +28,7 @@
     line-height: 28px;
     display: flex;
     align-items: flex-end;
-    color: #242424;
+    color: #FFFFFF;
 }
 
 .headerIcon {
@@ -46,8 +46,8 @@
     gap: 4px;
     width: 86px;
     height: 32px;
-    background: radial-gradient(109.81% 107.82% at 100.1% 90.19%, #38025c 33.63%, #7d55c7 70.31%, #bdbdbd 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-    border-radius: 4px;
+    background: transparent/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    border-radius: 0px;
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -57,7 +57,7 @@
 }
 
 .shareButton {
-    color: #FFFFFF;
+    color: transparent;
 }
 
 .shareButtonText {

@@ -585,7 +585,7 @@ const Chat = () => {
                                     className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
-                                <h1 className={styles.chatEmptyStateTitle}>Welcome to DI Chat</h1>
+                                <h1 className={styles.chatEmptyStateTitle}>DI Chat</h1>
                                 <h2 className={styles.chatEmptyStateSubtitle}>Denne chatbot er indstillet til at besvare dine spørgsmål.</h2>
                             </Stack>
                         ) : (
@@ -648,7 +648,8 @@ const Chat = () => {
                                 </Stack>
                             )}
                             <Stack>
-                                {appStateContext?.state.isCosmosDBAvailable?.status !== CosmosDBStatus.NotConfigured && <CommandBarButton
+                                {appStateContext?.state.isCosmosDBAvailable?.status !== CosmosDBStatus.NotConfigured && 
+                                <CommandBarButton
                                     role="button"
                                     styles={{ 
                                         icon: { 
@@ -656,7 +657,7 @@ const Chat = () => {
                                         },
                                         root: {
                                             color: '#FFFFFF',
-                                            background: "radial-gradient(109.81% 107.82% at 100.1% 90.19%, #0F6CBD 33.63%, #2D87C3 70.31%, #8DDDD8 100%)"
+                                            background: "#38025c"
                                         },
                                         rootDisabled: {
                                             background: "#BDBDBD"
@@ -676,7 +677,7 @@ const Chat = () => {
                                         },
                                         root: {
                                             color: '#FFFFFF',
-                                            background: disabledButton() ? "#BDBDBD" : "radial-gradient(109.81% 107.82% at 100.1% 90.19%, #0F6CBD 33.63%, #2D87C3 70.31%, #8DDDD8 100%)",
+                                            background: disabledButton() ? "#BDBDBD" : "#38025c",
                                             cursor: disabledButton() ? "" : "pointer"
                                         },
                                     }}
@@ -696,7 +697,7 @@ const Chat = () => {
                             </Stack>
                             <QuestionInput
                                 clearOnSend
-                                placeholder="Inntast et nyt spørgsmål..."
+                                placeholder="Indtast et nyt spørgsmål..."
                                 disabled={isLoading}
                                 onSend={(question, id) => {
                                     appStateContext?.state.isCosmosDBAvailable?.cosmosDB ? makeApiRequestWithCosmosDB(question, id) : makeApiRequestWithoutCosmosDB(question, id)
