@@ -94,7 +94,7 @@ export function ChatHistoryPanel(props: ChatHistoryPanelProps) {
                 <Stack verticalAlign="start">
                     <Stack horizontal styles={commandBarButtonStyle}>
                         <CommandBarButton
-                            iconProps={{ iconName: 'More' }}
+                            iconProps={{ iconName: 'More' , styles: { root: { color: 'white' } }}}
                             title={"Clear all chat history"}
                             onClick={onShowContextualMenu}
                             aria-label={"clear all chat history"}
@@ -110,7 +110,7 @@ export function ChatHistoryPanel(props: ChatHistoryPanelProps) {
                             onDismiss={onHideContextualMenu}
                         />
                         <CommandBarButton
-                            iconProps={{ iconName: 'Cancel' }}
+                            iconProps={{ iconName: 'Cancel' , styles: { root: { color: 'white' } }}}
                             title={"Hide"}
                             onClick={handleHistoryClick}
                             aria-label={"hide button"}
